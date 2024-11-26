@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.heading-1{
+  font-family: "Pacifico", cursive;
+}
+
+.fruits-images{
+  background-image: url(../images/background-img.jpg);
+}
+
+.recape-image{
+  background-image: url(../images/recape-image.jpg);
+}
+
+.fresh-item-image{
+  background-image: url(../images/fresh-item-image.jpg);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.767);
+  
+}
+
+.Food-image-section{
+  background-image: url('../images/10.jpg');
+  background-attachment: fixed; 
+  background-repeat: no-repeat;     
+}
+
+.fruit-and-vegetable{
+  background-image: url(../images/13.jpg);
+  background-repeat: no-repeat;
+  height: 75vh;
+}
+
+.Offers-and-input-section{
+  background-image: url('../images/9.jpg');
+}
+
+/* .card-image:hover{
+  transform: scale(1.1);
+  transition: transform 1.5s linear;
+} */
+
+.bg-color{
+  background-color: #1CB151;
+}
+
+.text-color{
+  color: #1CB151;
+}
+
+.nav-color:hover{
+  color: orange !important;
+}

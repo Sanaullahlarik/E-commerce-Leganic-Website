@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leganic Project</title>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+</head>
+
+<body class="m-0 p-0">
+  <!-- first header -->
+  <header class="container my-3 border-bottom py-2">
+    <div class="d-flex justify-content-between">
+      <div class="d-none d-sm-block">
+        <div class="d-flex">
+          <div class="d-flex align-items-center">
+            <iconify-icon class="ms-2 fs-4" icon="ic:baseline-phone"></iconify-icon>
+            <span class="">+1 5589 5548855</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <iconify-icon class="ms-2 fs-4" icon="ic:baseline-email"></iconify-icon>
+            <span class="ms-2 fs-5">info@your-site.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-lg-block d-md-none">
+        <div class="d-flex align-items-center">
+          <h6 class="fs-6 fw-normal">
+            <iconify-icon class="me-2 fs-6 fw-lighter" icon="fa:sign-in"></iconify-icon>Login or Register
+          </h6>
+          <div class="ms-5">
+            <iconify-icon class="text-dark fs-5" icon="basil:facebook-solid"></iconify-icon>
+            <iconify-icon class="text-dark mx-3 fs-5" icon="mdi:twitter"></iconify-icon>
+            <iconify-icon class="text-dark fs-5" icon="vaadin:google-plus"></iconify-icon>
+            <iconify-icon class="text-dark mx-3 fs-5" icon="ri:linkedin-fill"></iconify-icon>
+            <iconify-icon class="text-dark fs-5" icon="bxl:skype"></iconify-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main header -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-color m-0">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./images/logo-b.svg" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-normal text-white nav-color" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-normal text-white nav-color" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-normal text-white nav-color" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-normal text-white nav-color" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-normal text-white nav-color" href="#">Our Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-normal text-white nav-color" aria-disabled="true">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active fs-5 fw-normal dropdown-toggle text-white nav-color" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false ">
+              Account
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li>
+                <a class="dropdown-item text-white nav-color" href="./pages/signUp/signUp.html">Register</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-white nav-color" href="./pages/signIn/signIn.html">Login</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center gap-3" role="search">
+          <iconify-icon class="fs-3 fw-bold text-dark" icon="fa:search"></iconify-icon>
+          <div class="position-relative">
+            <button class="border-0 bg-transparent position-relative" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <a class="nav-link" href="#">
+                <iconify-icon class="icon fs-2 fw-bold text-dark" icon="lsicon:shopping-cart-outline"></iconify-icon>
+                <!-- <span id="cartCounter" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  0
+                </span> -->
+              </a>
+            </button>
+          </div>
+          <iconify-icon class="fs-2 fw-bold text-dark" icon="material-symbols:menu"></iconify-icon>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- hero section -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+
+      <div class="carousel-inner position-relative">
+        <div class="carousel-item active">
+          <div class="hero-section position-absolute top-50 start-50 translate-middle text-center">
+            <h4 class="fs-4 fw-normal heading-1">
+              Most Trusted Organic Food
+            </h4>
+            <h1 class="fs-1 fw-bold">
+              Fresh Organic Items For <br />
+              Your Healthy Life
+            </h1>
+            <div class="pt-2">
+              <button type="button"
+              class="btn btn-success btn-lg btn-outline-warning text-white border-0 px-2 px-md-4 mb-2">
+                LEARN MORE
+              </button>
+              <button type="button"
+              class="btn btn-success btn-lg btn-outline-warning text-white border-0 px-2 px-md-4 mb-2">
+                START TODAY
+              </button>
+            </div>
+          </div>
+          <img style="height: 75vh" class="d-block w-100" src="./images/hero-image-1.jpg" alt="hero-img-1" />
+        </div>
+
+        <div class="carousel-item" data-intervel="1000">
+          <div class="hero-section position-absolute top-50 start-50 translate-middle text-center">
+            <h4 class="fs-4 fs-md-5 fw-normal heading-1">
+              Most Trusted Organic Food
+            </h4>
+            <h1 class="hero-heading fw-bold">
+              Organic Fruits, <br />
+              Vegetables & Meat
+            </h1>
+
+            <div class="pt-2">
+              <button type="button" class="btn btn-success btn-lg btn-outline-warning text-white border-0 px-2 px-md-4 mb-2">
+                LEARN MORE
+              </button>
+
+              <button type="button"
+              class="btn btn-success btn-lg btn-outline-warning text-white border-0 px-2 px-md-4 mb-2">
+                START TODAY
+              </button>
+            </div>
+          </div>
+          <img style="height: 75vh" class="d-block w-100" src="./images/hero-image-2.jpg" alt="hero-img-2" />
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--section-1 -->
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-md-5">
+        <img class="img-fluid mb-3 ms-5" src="./images/icon-1.png" alt="leaf-icon" />
+        <h1 class="fs-3 fw-bold">
+          Producing The Finest and Good Taste Organic Foods With Affordable
+          Price
+        </h1>
+        <h3 class="text-color fs-3 fw-normal">
+          From the hearts of California to the landing farms of the world
+          since 1920!
+        </h3>
+      </div>
+      <div class="col-md-7 mt-sm-5 mt-sm-3">
+        <div>
+          <p>
+            Lorem veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo. Nemo enim ipsam voluptate tem quia voluptas sit
+            aspernatur aut odit aut fugit sed quia consequuntur mag dolores
+            eosuia ely ratione voluptatem sequib nesciunt.
+          </p>
+          <p>
+            Lorem veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo. Nemo enim ipsam voluptate tem quia voluptas sit
+            aspernatur aut odit aut fugit sed quia consequuntur mag dolores
+            eosuia ely ratione voluptatem sequib nesciunt.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="bg-white shadow-sm w-100 text-center p-3 mb-2">
+              <img src="./images/tracktor-icon.png" />
+              <h5 class="mt-2">ORGANIC FARMS</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="bg-white shadow-sm w-100 text-center p-3 mb-2">
+              <img src="./images/sun-icon.png" />
+              <h5 class="mt-2">CHEMICALLY SAFE</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-white shadow-sm w-100 text-center p-3 mb-2">
+              <img src="./images/icon-2.png" />
+              <h5 class="mt-2">FULLY NUTRITIONS</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fruits images section -->
+  <div class="fruits-images" style="background-image: cover">
+    <div class="container">
+      <div class="row justify-content-evenly align-items-center px-5 flex-wrap py-5">
+        <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+          <img src="./images/apple-img.png" alt="apple-img" />
+          <h5 class="mt-2">Apples</h5>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+          <img src="./images/banana-img.png" alt="banana-img" />
+          <h5 class="mt-2">Banana</h5>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+          <img src="./images/grapes-img.png" alt="grapes-img" />
+          <h5 class="mt-2">Grapes</h5>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+          <img src="./images/straberry-img.png" alt="straberry-img" />
+          <h5 class="mt-2">Strwaberry</h5>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+          <img src="./images/carrots-img.png" alt="carrots-img" />
+          <h5 class="mt-2">Carrots</h5>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+          <img src="./images/lemon-img.png" alt="lemon-img" />
+          <h5 class="mt-2">Lemon</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- recipe and fresh-item section -->
+  <div class="container mt-5 p-2">
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="card recape-image position-relative" style="
+              height: 350px;
+              background-repeat: no-repeat;
+              background-size: cover;
+            ">
+          <div class="position-absolute top-50 end-0 translate-middle-y p-5">
+            <div>
+              <h1 class="text-white fw-bold me-5 display-5">
+                Make <br />
+                Finest <br />Recipes
+              </h1>
+            </div>
+            <button class="btn btn-success btn-outline-warning border-0 text-white mt-3 px-5 py-3">
+              Read More >
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card position-relative fresh-item-image" style="
+              height: 350px;
+              background-repeat: no-repeat;
+              background-size: cover;
+            ">
+          <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
+            <h4 class="text-danger">Most Trusted Organic Food</h4>
+            <h1 class="text-black fw-bold">Bring Fresh Items</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--fruits cards-section -->
+  <div class="container mt-5" id="shopping">
+    <div class="row g-3 justify-content-center my-5">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center shadow border-0 h-100">
+          <img src="./images/1-2.jpg" class="card-img-top mx-auto mt-3 w-50 img-fluid" alt="" />
+          <div class="card-body d-flex flex-column">
+            <div class="rating mb-2 text-warning">
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+            </div>
+            <h5>Kiwi Juice</h5>
+            <h5 class="text-secondary fw-bold">$3.50</h5>
+            <button class="btn btn-success btn-outline-warning border-0 text-white fw-bold px-4 add-to-cart-btn" data-name="Kiwi Juice"
+              data-price="3.50" data-made="Betterfoods" data-img="./images/1-2.jpg">
+              <iconify-icon icon="bxs:cart"></iconify-icon>
+              <span class="fw-semibold">Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center shadow border-0 h-100">
+          <img src="./images/2-2.jpg" class="card-img-top mx-auto mt-3 w-50 img-fluid" alt="" />
+          <div class="card-body d-flex flex-column">
+            <div class="rating mb-2 text-warning">
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+            </div>
+            <h5>Pomegranate</h5>
+            <h5 class="text-secondary fw-bold">$10.00</h5>
+            <button class="btn btn-success btn-outline-warning border-0 text-white fw-bold px-4 add-to-cart-btn" data-name="Pomegranate"
+              data-price="10.00" data-made="Betterfoods" data-img="./images/2-2.jpg">
+              <iconify-icon icon="bxs:cart"></iconify-icon>
+              <span class="fw-semibold">Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center shadow border-0 h-100">
+          <img src="./images/Group-1texst.jpg" class="card-img-top mx-auto mt-3 w-50 img-fluid" alt="" />
+          <div class="card-body d-flex flex-column">
+            <div class="rating mb-2 text-warning">
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+            </div>
+            <h5>Mixed Dry Fruits</h5>
+            <p class="text-secondary fw-bold">
+              $5.00 <span class="text-decoration-line-through">$10.00</span>
+            </p>
+            <button class="btn btn-success btn-outline-warning border-0 text-white fw-bold px-4 add-to-cart-btn" data-name="Mixed Dry Fruits"
+              data-price="5.00" data-made="Betterfoods" data-img="./images/Group-1texst.jpg">
+              <iconify-icon icon="bxs:cart"></iconify-icon>
+              <span class="fw-semibold">Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center shadow border-0 h-100">
+          <img src="./images/4-1.jpg" class="card-img-top mx-auto mt-3 w-50 img-fluid" alt="" />
+          <div class="card-body d-flex flex-column">
+            <div class="rating mb-2 text-warning">
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+            </div>
+            <h5>Fresh Beet Juice</h5>
+            <h5 class="text-secondary fw-bold">$7.00</h5>
+            <button class="btn btn-success btn-outline-warning border-0 text-white fw-bold px-4 add-to-cart-btn" data-name="Fresh Beet Juice"
+              data-price="7.00" data-made="Betterfoods" data-img="./images/4-1.jpg">
+              <iconify-icon icon="bxs:cart"></iconify-icon>
+              <span class="fw-semibold">Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-3 justify-content-center">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center shadow border-0 h-100">
+          <img src="./images/5-1.jpg" class="card-img-top mx-auto mt-3 w-50 img-fluid" alt="" />
+          <div class="card-body d-flex flex-column">
+            <div class="rating mb-2 text-warning">
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+            </div>
+            <h5>Wheat Bread</h5>
+            <h5 class="text-secondary fw-bold">$5.75</h5>
+            <button class="btn btn-success btn-outline-warning border-0 text-white fw-bold px-4 add-to-cart-btn" data-name="Wheat Bread"
+              data-price="5.75" data-made="Betterfoods" data-img="./images/5-1.jpg">
+              <iconify-icon icon="bxs:cart"></iconify-icon>
+              <span class="fw-semibold">Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center shadow border-0 h-100">
+          <img src="./images/6-1.jpg" class="card-img-top mx-auto mt-3 w-50 img-fluid" alt="" />
+          <div class="card-body d-flex flex-column">
+            <div class="rating mb-2 text-warning">
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+            </div>
+            <h5>Peach fruit</h5>
+            <h5 class="text-secondary fw-bold">$222.00</h5>
+            <button class="btn btn-success btn-outline-warning border-0 text-white fw-bold px-4 add-to-cart-btn" data-name="Peach fruit"
+              data-price="222.00" data-made="Betterfoods" data-img="./images/6-1.jpg">
+              <iconify-icon icon="bxs:cart"></iconify-icon>
+              <span class="fw-semibold">Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center shadow border-0 h-100">
+          <img src="./images/Group-1texst.jpg" class="card-img-top mx-auto mt-3 w-50 img-fluid" alt="" />
+          <div class="card-body d-flex flex-column">
+            <div class="rating mb-2 text-warning">
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+            </div>
+            <h5>Carrot Juice</h5>
+            <p class="text-secondary fw-bold">
+              $7.00 <span class="text-decoration-line-through">$10.00</span>
+            </p>
+            <button class="btn btn-success btn-outline-warning border-0 text-white fw-bold px-4 add-to-cart-btn" data-name="Carrot Juice"
+              data-price="7.00" data-made="Betterfoods" data-img="./images/Group-1texst.jpg">
+              <iconify-icon icon="bxs:cart"></iconify-icon>
+              <span class="fw-semibold">Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center shadow border-0 h-100">
+          <img src="./images/8-1.jpg" class="card-img-top mx-auto mt-3 w-50 img-fluid" alt="" />
+          <div class="card-body d-flex flex-column">
+            <div class="rating mb-2 text-warning">
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+              <iconify-icon icon="fa:star"></iconify-icon>
+            </div>
+            <h5>Strawberry</h5>
+            <h5 class="text-secondary fw-bold">$14.00</h5>
+            <button class="btn btn-success btn-outline-warning border-0 text-white fw-bold px-4 add-to-cart-btn" data-name="Strawberry"
+              data-price="14.00" data-made="Betterfoods" data-img="./images/8-1.jpg">
+              <iconify-icon icon="bxs:cart"></iconify-icon>
+              <span class="fw-semibold">Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Best and Healthy Organic Food section -->
+  <div class="my-5 Food-image-section position-relative overflow-hidden bg-dark text-white py-5">
+    <div class="overlay position-absolute top-0 left-0 right-0 bottom-0 z-1"></div>
+    <div class="container py-5 position-relative z-2">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
+          <p class="text-success fs-5 fw-bold">Leganic Food Presents...</p>
+          <h1 class="fw-bold">
+            Best and Healthy Organic Food to Unlock Full Potential
+          </h1>
+          <p class="lead fw-semibold">
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+            consectetur adipisci velit, sed quia non numquam eius modi tempora
+            incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <button class="bg-danger p-4 rounded-pill border-0">
+            <iconify-icon class="display-2 text-light" icon="fa:play-circle"></iconify-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Leganic Products sections -->
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5 mb-4">
+        <div class="text-start mb-5">
+          <img class="ms-lg-5" src="./images/logo-w.svg" alt="" />
+          <h2 class="mt-3 fs-3 fw-normal">Reasons To Choose</h2>
+          <h1 class="fw-bold">LEGANIC PRODUCTS</h1>
+          <p class="text-muted">
+            Esse cillum dolore eu fugiat nulla pariatur excepteur sint
+            occaecat cupidatat non proident sunt in culpa qui sed ipsum
+            officia deserunt.
+          </p>
+        </div>
+        <div class="mt-4 ms-5">
+          <div class="d-flex align-items-center mb-3 py-3">
+            <iconify-icon class="text-success fs-2 me-3" icon="icon-park-solid:seedling"></iconify-icon>
+            <div class="ps-5">
+              <h4 class="fw-bold mb-0">Fresh Organic Items</h4>
+              <p class="text-muted mb-0">
+                Ding elit sed usmod tempor incididunt
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mb-3 py-3">
+            <iconify-icon class="text-success fs-2 me-3" icon="fa:sun-o"></iconify-icon>
+            <div class="ps-5">
+              <h4 class="fw-bold mb-0">Experts Team Advice</h4>
+              <p class="text-muted mb-0">
+                Ding elit sed usmod tempor incididunt
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mb-3 py-3">
+            <iconify-icon class="text-success fs-2 me-3" icon="fa:shopping-cart"></iconify-icon>
+            <div class="ps-5">
+              <h4 class="fw-bold mb-0">Affordable Products</h4>
+              <p class="text-muted mb-0">
+                Ding elit sed usmod tempor incididunt
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+        <img src="./images/image-7.jpg" alt="" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+  <div class="mt-4">
+    <div class="row g-0">
+      <div class="col-12 col-6 col-sm-4 col-md-3 p-0">
+        <img class="img-fluid" alt="" src="./images/21.jpg" />
+      </div>
+      <div class="col-12 col-sm-4 col-md-3 p-0">
+        <img class="img-fluid" alt="" src="./images/22.jpg" />
+      </div>
+      <div class="col-12 col-sm-4 col-md-3 p-0">
+        <img class="img-fluid" alt="" src="./images/23.jpg" />
+      </div>
+      <div class="col-12 col-sm-4 col-md-3 p-0">
+        <img class="img-fluid" alt="" src="./images/24.jpg" />
+      </div>
+      <div class="col-12 col-sm-4 col-md-3 p-0">
+        <img class="img-fluid" alt="" src="./images/25.jpg" />
+      </div>
+      <div class="col-12 col-sm-4 col-md-6 p-0">
+        <img class="img-fluid" alt="" src="./images/26.jpg" />
+      </div>
+      <div class="col-12 col-sm-4 col-md-3 p-0">
+        <img class="img-fluid" alt="" src="./images/27.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Card-image-section -->
+  <div class="container text-center py-5">
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="mb-3">
+          <img src="./images/icon-1.png" alt="Icon" class="img-fluid" />
+        </div>
+        <h2 class="text-dark fw-bold pt-3">Expert Farmers</h2>
+        <p class="text-muted">
+          Esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
+          cupidatat non<br />
+          proident sunt in culpa qui sed ipsum officia deserunt.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 larger shadow border-0 bg-body-secondary">
+          <img src="./images/farmer-10.jpg" alt="" class="img-fluid" />
+          <div class="bg-light">
+            <h5 class="text-dark fw-bold pt-3">Scott William</h5>
+            <span class="text-muted">Head of Team</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 larger shadow border-0 bg-body-secondary">
+          <img src="./images/farmer-11.jpg" alt="" class="img-fluid" />
+          <div class="bg-light">
+            <h5 class="text-dark fw-bold pt-3">Liam Irvines</h5>
+            <span class="text-muted">Senior Farmer</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 larger shadow border-0 bg-body-secondary">
+          <img src="./images/farmer-12.jpg" alt="" class="img-fluid" />
+          <div class="bg-light">
+            <h5 class="text-dark fw-bold pt-3">John Smith</h5>
+            <span class="text-muted">Senior Farmer</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 larger shadow border-0 bg-body-secondary">
+          <img src="./images/farmer-13.jpg" alt="" class="img-fluid" />
+          <div class="bg-light">
+            <h5 class="text-dark fw-bold pt-3">Diana Leslie</h5>
+            <span class="text-muted">Senior Farmer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fruit-and-vegetable -->
+  <div class="fruit-and-vegetable">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-12"></div>
+        <div class="col-md-6 col-sm-12 col-12 mt-5">
+          <div class="p-4">
+            <h2 class="fw-normal mb-3">Deal Of The Week</h2>
+            <h1 class="mb-3">Fresh Fruits &amp; Vegetables</h1>
+            <h5 class="fw-bold text-color mb-4">
+              Offer 2Kg pack from our organic store
+            </h5>
+            <p class="text-muted mb-4">
+              Incididunt ut labore et dolore magna aliqua. Ut enim min veniam
+              quis trud exercitation ullamco laboris aliquip ex ea.
+            </p>
+            <div class="row mb-4">
+              <div class="col-md-3 col-6 text-center py-3 bg-white rounded shadow">
+                <span class="d-block fs-2 fw-bold">00</span>
+                <small class="text-muted">Days</small>
+              </div>
+              <div class="col-md-3 col-6 text-center py-3 bg-white rounded shadow">
+                <span class="d-block fs-2 fw-bold">00</span>
+                <small class="text-muted">Hours</small>
+              </div>
+              <div class="col-md-3 col-6 text-center py-3 bg-white rounded shadow">
+                <span class="d-block fs-2 fw-bold">00</span>
+                <small class="text-muted">Mins</small>
+              </div>
+              <div class="col-md-3 col-6 text-center py-3 bg-white rounded shadow">
+                <span class="d-block fs-2 fw-bold">00</span>
+                <small class="text-muted">Secs</small>
+              </div>
+            </div>
+            <div class="text-md-center">
+              <button class="ms-lg-5 border-0 bg-color rounded-2 p-3 fw-bold text-white text-uppercase">
+                Get The Deal
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Latest News fruits and vegetables -->
+  <div class="container my-5">
+    <div class="text-center">
+      <img src="./images/icon-1.png" alt="" />
+      <h1 class="py-5 fw-bold">Our Latest News</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-4 position-relative">
+        <div class="card h-100 larger shadow border-0">
+          <img src="./images/fruit-image-1.jpg" class="card-img-top img-fluid card-image" alt="" />
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-5">
+              <div class="bg-color text-white ms-3 text-center rounded-3 px-4 position-absolute top-50 start-0 translate-middle-y">
+                <p class="fs-4 fw-bold">07</p>
+                <p class="mb-0 fs-5 fw-normal">Jun</p>
+              </div>
+            </div>
+            <h3 class="card-title fw-medium">
+              Health Benefits Of A Raw Food
+            </h3>
+            <p class="card-text text-muted">
+              By
+              <span class="font-weight-bold text-dark">leganicaduser</span> |
+              Organic Food
+            </p>
+            <button type="button" class="btn btn-outline-success text-dark fs-5 fw-normal">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 larger shadow border-0 position-relative">
+          <img src="./images/fruit-juice-image-2.jpg" class="card-img-top img-fluid" alt="" />
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-5">
+              <div class="bg-color text-white ms-3 text-center rounded-3 px-4 position-absolute top-50 start-0 translate-middle-y">
+                <p class="fs-4 fw-bold">07</p>
+                <p class="mb-0 fs-5 fw-normal">Jun</p>
+              </div>
+            </div>
+            <h3 class="card-title fw-medium">
+              Organic Foods And Its Advantages
+            </h3>
+            <p class="card-text text-muted">
+              By
+              <span class="font-weight-bold text-dark">leganicaduser</span> |
+              Health Tips
+            </p>
+            <button type="button" class="btn btn-outline-success text-dark fs-5 fw-normal">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 larger shadow border-0 position-relative">
+          <img src="./images/vegetable-image-3.jpg" class="card-img-top" alt="" />
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-5">
+              <div class="bg-color text-white text-center rounded-3 ms-3 px-4 position-absolute top-50 start-0 translate-middle-y">
+                <p class="fs-4 fw-bold">07</p>
+                <p class="mb-0 fs-5 fw-normal">Jun</p>
+              </div>
+            </div>
+            <h3 class="card-title fw-medium">
+              Health Benefits Of A Raw Food
+            </h3>
+            <p class="card-text text-muted">
+              By
+              <span class="font-weight-bold text-dark">leganicaduser</span> |
+              Healthy Diet
+            </p>
+            <button type="button" class="btn btn-outline-success text-dark fs-5 fw-normal">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- carousal-images-section -->
+  <div class="container mt-5">
+    <div class="row justify-content-evenly align-items-center flex-wrap">
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+        <img class="img-fluid" src="./images/client-logo-1.jpg" alt="" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+        <img class="img-fluid" src="./images/client-logo-2.jpg" alt="" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+        <img class="img-fluid" src="./images/client-logo-3.jpg" alt="" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+        <img class="img-fluid" src="./images/client-logo-4.jpg" alt="" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+        <img class="img-fluid" src="./images/client-logo-5.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!--  Special Offers and input section -->
+  <div class="mt-5 Offers-and-input-section" style="height: 200px">
+    <div class="container">
+      <div class="row text-white text-center align-items-center pt-lg-5 h-100">
+        <div class="col-md-8 col-sm-12 col-12">
+          <h2 class="fs-1 fw-bold">Subscribe To Our Special Offers</h2>
+          <p>
+            Today sign up for our newsletter and receive 15% OFF on your
+            purchase
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12 col-12">
+          <div class="d-flex justify-content-center align-items-center bg-white px-3 py-3">
+            <input type="email" class="form-control me-2" placeholder="Type Your Email" />
+            <button class="btn btn-success">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer section -->
+  <div class="bg-dark">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="pb-lg-4">
+            <a href="/index.html"><img src="./images/logo-w.svg" alt="Logo" class="me-2" /></a>
+          </div>
+          <p class="text-white">
+            Integer lobortis sem consequat imperdiet sed In nulla viverra ut
+            lorem ipsumut, dapibus conse etur diam nuq bibendum diet.
+          </p>
+          <div class="text-white">
+            <p>
+              <iconify-icon class="me-2" icon="fa:map-marker"></iconify-icon>102 Taily End Road, NewYork - USA
+            </p>
+            <p>
+              <iconify-icon class="me-2" icon="fa-solid:phone-alt"></iconify-icon>+1(222)30345004600
+            </p>
+            <p>
+              <iconify-icon class="me-2" icon="fa:envelope"></iconify-icon>info@organicdomain.com
+            </p>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="fw-bold mb-4 text-white">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="pt-3 text-white">About Us</li>
+            <li class="pt-3 text-white">New Products</li>
+            <li class="pt-3 text-white">Blog</li>
+            <li class="pt-3 text-white">Top Seller</li>
+            <li class="pt-3 text-white">Contact Us</li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="fw-bold mb-4 text-white">Our Services</h5>
+          <ul class="list-unstyled">
+            <li class="pt-3 text-white">Organic Food</li>
+            <li class="pt-3 text-white">Fresh Juices</li>
+            <li class="pt-3 text-white">Raw Food</li>
+            <li class="pt-3 text-white">Bread Food</li>
+            <li class="pt-3 text-white">Dry Food</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-4 text-white">Instagram Feed</h5>
+          <div class="row g-2">
+            <div class="col-4">
+              <img src="./images/flickr-7.jpg" alt="" class="img-fluid rounded" />
+            </div>
+            <div class="col-4">
+              <img src="./images/flickr-8.jpg" alt="" class="img-fluid rounded" />
+            </div>
+            <div class="col-4">
+              <img src="./images/flickr-9.jpg" alt="" class="img-fluid rounded" />
+            </div>
+            <div class="col-4">
+              <img src="./images/flickr-10.jpg" alt="" class="img-fluid rounded" />
+            </div>
+            <div class="col-4">
+              <img src="./images/flickr-11.jpg" alt="" class="img-fluid rounded" />
+            </div>
+            <div class="col-4">
+              <img src="./images/flickr-12.jpg" alt="" class="img-fluid rounded" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top border-1 border-secondary py-3 bg-dark">
+    <div class="container py-3">
+      <div class="text-white">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            &copy; 2020 LEGANIC - All rights reserved
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <iconify-icon class="fs-5 text-white" icon="basil:facebook-solid"></iconify-icon>
+            <iconify-icon class="text-dark mx-3 fs-5 text-white mx-2" icon="mdi:twitter"></iconify-icon>
+            <iconify-icon class="text-dark fs-5 text-white" icon="vaadin:google-plus"></iconify-icon>
+            <iconify-icon class="text-dark mx-3 fs-5 text-white mx-2" icon="ri:linkedin-fill"></iconify-icon>
+            <iconify-icon class="text-dark fs-5 text-white me-2" icon="bxl:skype"></iconify-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- scrollToTop arrow -->
+  <div id="arrow" class="position-fixed bottom-0 end-0 mb-4 me-4 d-flex justify-content-center align-items-center">
+    <a id="scrollToTop" class="btn btn-warning rounded-circle text-white p-3" href="#">
+      <iconify-icon class="fs-3 text-center" icon="mdi:arrow-up-bold"></iconify-icon>
+    </a>
+  </div>
+
+  <!-- Offcanvaas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" class="cartItems">
+      <div id="cartItems"></div>
+      <span id="cartQuantityBadge"></span>
+    </div>
+    <div class="offcanvas-footer container mb-5">
+      <hr />
+      <div class="">
+        <strong class="text-black-50">total:</strong>
+        <strong id="totalPrice">$0.00</strong>
+      </div>
+      <div class="d-flex justify-content-between mt-2"></div>
+    </div>
+  </div>
+  <script src="./javaScript/script.js"></script>
+</body>
+
+</html>
